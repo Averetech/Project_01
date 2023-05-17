@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1C1C1C;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+/* ---header--- */
+
+#header {
+    padding: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 4px double #E31C25;
+}
+
+/* ---main--- */
+
+.container {
+    padding: 80px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-bottom:4px double #E31C25;
+}
+
+.marker {
+    width: 300px;
+    height: 150px;
+}
+
+.box1 {
+    background: linear-gradient( rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    box-shadow: 0 0 20px 0 rgb(83, 14, 14, 0.8);
+}
+
+.box2 {
+    background: linear-gradient( #55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+}
+
+.box3 {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsl(223, 59%, 31%, 0.8);
+}
+
+.sleeve {
+    width: 80px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap {
+    width: 60px;
+    height: 150px;
+}
+
+.cap, .sleeve {
+    display: inline-block;
+}
+
+footer {
+    padding-top: 80px;
+}
+
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 30px;
+    justify-content: center;
+}
+
+p {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    #header {
+        font-size: 10px;
+    }
+    .social-icons {
+        font-size: 15px;
+    }
+    .marker {
+        width: 200px;
+        height: 100px;
+        width: 100%;
+    }
+    .sleeve {
+        height: 100px;
+    }
+    .cap {
+        height: 100px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
